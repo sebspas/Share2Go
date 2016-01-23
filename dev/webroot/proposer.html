@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Share2go : Nouveau Trajet</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="img/favicon.ico" type="image/x-icon" rel="icon" />
+  <link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+</head>
+<body>
+	<div id="main">
+		<div class="menu">
+			<div class="menu-logo">
+				<a class="menu-logo-link" href="#"></a>
+			</div>
+			<!--<span class="menu-btn"></span>-->
+			<nav class="menu-navigation">
+				<ul class="inline-block left">
+					<li class="menu-list">
+						<a class="menu-link" href="#">Home
+							<span class="link-notif"><i class="link-notif-i">5</i></span>
+						</a>
+					</li>
+					<li class="menu-list"><a class="menu-link" href="#">Profil</a></li>
+					<li class="menu-list">
+						<a class="menu-link" href="#">Messages
+							<span class="link-notif"><i class="link-notif-i">3</i></span>
+						</a>
+					</li>
+					<li class="menu-list"><a class="menu-link current" href="#">Nouveau trajet</a></li>
+				</ul>
+			</nav>
+			<div class="menu-user right">
+				<span class="user-avatar left"><img src="http://gravatar.com/avatar/c71c38340fc94601738c4d0c794cca36?s=512" alt="avatar"></span>
+				<a class="menu-link right" href="#">Se déconnecter</a>
+			</div>
+		</div><!-- // menu -->
+		<div class="row">
+			<div class="frame cols5">
+				<div class="hb red3"><h2 class="hb-title">Nouveau Trajet</h2></div>
+				<div class="frame-content">
+					<form method="post" action="#" class="center">
+	       				<input type="date" placeholder="Date" name="date" id="date" data-format="dd&#x2F;MM&#x2F;yyyy" required />
+	       				<input type="text" placeholder="Ville départ" name="villedep" id="villedep" required />
+	       				<input type="text" placeholder="Ville arrivée" name="villearr" id="villearr" required />
+	       				<input type="text" placeholder="Heure départ" name="Hdep" id="Hdep" data-format="hh:mm" required />
+	       				<input type="text" placeholder="Prix" name="prix" id="prix" required />
+					    <label>Véhicule</label>
+	       				<select name="vehicule">
+				          	<option value="r8">Audi R8</option>
+				          	<option value="a3">Audi A3</option>
+				          	<option value="c3">Citröen C3</option>
+					    </select>
+					    <label>Place(s) disponible(s)</label>
+	       				<select name="places">
+				          	<option value="1">1</option>
+				          	<option value="2">2</option>
+				          	<option value="3">3</option>
+				          	<option value="4">4</option>
+				          	<option value="5">5</option>
+					    </select>
+					    <label>Options</label>
+						<div class="line2">
+							<label class="sp1" for="music"><div class="icon music"></div></label>
+							<input type="checkbox" class="vt-top" id="music" name="music" value="music" />
+
+							<label class="sp1" for="bag"><div class="icon bag"></div></label>
+							<input type="checkbox" class="vt-top" id="bag" name="bag" value="bag" />
+
+							<label class="sp1" for="nocig"><div class="icon nocig"></div></label>
+							<input type="checkbox" class="vt-top" id="nocig" name="nocig" value="nocig" />
+
+							<label class="sp1" for="talk"><div class="icon talk"></div></label>
+							<input type="checkbox" class="vt-top" id="talk" name="talk" value="talk" />
+						</div>
+						<!-- <div class="line2">
+							<div class="icon bag"></div>
+							<input type="checkbox"  id="bag" name="bag" value="bag" />
+						</div> -->
+						<!-- <div class="line2">
+							<div class="icon nocig"></div>
+							<input type="checkbox"  id="nocig" name="nocig" value="nocig" />
+						</div> -->
+						<!-- <div class="line2">
+							<div class="icon talk"></div>
+							<input type="checkbox"  id="talk" name="talk" value="talk" />
+						</div> -->
+	                	<div class="line2">
+	                		<p class="txt-center">En cliquant sur Valider, vous acceptez les <a href="#">conditions générales</a> d'utilisation.</p>
+	                	</div>
+	                	<input class="btn red3 center" type="submit" value="Valider" name="send" id="send">
+					</form>
+				</div>
+			</div>
+			<div class="g1"></div>
+			<div class="frame cols5">
+				<div class="hb blue2"><h2 class="hb-title">Carte</h2></div>
+				<div class="frame-content">
+					<iframe width="425" 
+						height="350" 
+						frameborder="0" 
+						scrolling="no" 
+						marginheight="0" 
+						marginwidth="0" 
+						src="https://maps.google.fr/maps?f=d&amp;source=s_d&amp;saddr=<?php echo $source; ?>&amp;daddr=<?php echo $dest; ?>&amp;hl=fr&amp;geocode=FRSWlAIdOPtUACnLJqXwM6PJEjG8woyx4SGNLA%3BFQWdngIdmFNJACkHnbw5h-u1EjE2ex36bptC5g&amp;aq=&amp;sll=43.949318,4.805529&amp;sspn=0.001634,0.001124&amp;vpsrc=0&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=43.637317,5.209932&amp;spn=0.692203,0.822113&amp;output=embed">
+					</iframe>
+				</div>
+			</div>
+		</div> <!-- .row -->
+</body>
+</html>

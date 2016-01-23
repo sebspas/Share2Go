@@ -1,0 +1,97 @@
+/*==========  elements.css  ==========*/
+/**
+* @content : Definition of basic html elements.
+* 
+* @tags : *, html, body, h1, h2, h3
+**/
+
+
+
+/*==========  MENU  ==========
+*	1 - HTML-ELEMENTS
+*	2 - OBJECTS-ELEMENTS
+**==========  ---  ==========*/
+
+
+
+/*==========  1 - HTML-ELEMENTS  ==========*/
+* {
+	outline: none;
+	margin: 0;
+	padding: 0;
+	font-family: Nova;
+}
+
+
+html {	
+	text-align: justify;
+}
+
+body {
+
+}
+
+section {
+
+}
+
+div {
+
+}
+
+span {
+
+}
+
+nav {
+	display: inline-block;
+}
+
+ul {
+	display: block;
+}
+
+li {
+
+}
+
+a {
+
+}
+
+p {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+/*-----  End of HTML-ELEMENTS  ------*/
+
+
+
+
+/*==========  1 - OBJECTS-ELEMENTS  ==========*/
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+}
+
+.fixed-bottom {
+	position: fixed;
+	bottom: 0;
+}
+/*-----  End of OBJECTS-ELEMENTS  ------*/

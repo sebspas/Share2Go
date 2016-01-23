@@ -1,0 +1,33 @@
+/*==========  fonts.css  ==========*/
+/**
+* @content : Extra fonts corresponding
+* 			 to the graphic chart.
+* 
+* @tags: League, Droid, Nova, Din
+*   
+**/
+
+
+/* League */
+@font-face {
+    font-family: "League";
+    src: url('../fonts/leaguegothic-italic-webfont.ttf');
+}
+
+/* Droid */
+@font-face {
+    font-family: "Droid";
+    src: url('../fonts/DroidSans.ttf');
+}
+
+/* Nova */
+@font-face {
+    font-family: "Nova";
+    src: url('../fonts/ProximaNovaRegular.otf');
+}
+
+/* Din */
+@font-face {
+    font-family: "Din";
+    src: url('../fonts/din-boldalternate.ttf');
+}

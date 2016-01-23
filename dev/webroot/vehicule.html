@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Share2go : Nouveau Vehicule</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="img/favicon.ico" type="image/x-icon" rel="icon" />
+  <link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+</head>
+<body>
+	<div id="main">
+		<div class="menu">
+			<div class="menu-logo">
+				<a class="menu-logo-link" href="#"></a>
+			</div>
+			<!--<span class="menu-btn"></span>-->
+			<nav class="menu-navigation">
+				<ul class="inline-block left">
+					<li class="menu-list">
+						<a class="menu-link" href="#">Home
+							<span class="link-notif"><i class="link-notif-i">5</i></span>
+						</a>
+					</li>
+					<li class="menu-list"><a class="menu-link current" href="#">Profile</a></li>
+					<li class="menu-list">
+						<a class="menu-link" href="#">Messages
+							<span class="link-notif"><i class="link-notif-i">3</i></span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="menu-user right">
+				<span class="user-avatar left"><img src="http://gravatar.com/avatar/c71c38340fc94601738c4d0c794cca36?s=512" alt="avatar"></span>
+				<a class="menu-link right" href="#">Se déconnecter</a>
+			</div>
+		</div><!-- // menu -->
+		<div class="row">
+			<div class="frame cols5">
+				<div class="hb red3"><h2 class="hb-title">Nouveau Véhicule</h2></div>
+				<div class="frame-content">
+					<form method="post" action="#" class="center">
+	       				<input type="text" placeholder="Marque du vehicule" name="marque" id="marque" required />
+	       				<input type="text" placeholder="Modèle du vehicule" name="modele" id="modele" required />
+	       				<label>Nombre de places</label>
+	       				<select name="places">
+				          	<option value="1">1</option>
+				          	<option value="2">2</option>
+				          	<option value="3">3</option>
+				          	<option value="4">4</option>
+				          	<option value="5">5</option>
+					    </select>
+	                	<div class="line2">
+	                		<p class="txt-center">En cliquant sur Ajouter, vous acceptez les <a href="#">conditions générales</a> d'utilisation.</p>
+	                	</div>
+	                	<input class="btn red3 center" type="submit" value="Ajouter" name="send" id="send">
+					</form>
+				</div>
+			</div>
+		</div> <!-- .row -->
+</body>
+</html>

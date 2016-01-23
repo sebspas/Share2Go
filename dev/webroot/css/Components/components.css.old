@@ -1,0 +1,98 @@
+/*==========  components.css  ==========*/
+/**
+* @content : Definition of reusable components
+* 			 specified for this website.
+* 
+* @tags : .menu, 
+**/
+
+@import url('components.mobile.css');
+
+
+/*==========  .menu  ==========*/
+
+.menu {
+	background: #0471B8;
+	display: block;
+	height: 65px;
+	width: 100%;
+	z-index: 5;
+}
+
+	.menu-logo {
+		background: url('../../img/logo1.png') no-repeat 50% 50% #26BCEA;
+		background-size: 65px;
+		display: block;
+		float: left;
+		height: 65px;
+		padding: 0 10px;
+		transition-duration: 0.5s;
+		width: 65px;
+	}
+
+		.menu-logo-link {
+			display: block;
+			height: 65px;
+			width: 65px;
+		}
+
+		.menu-logo:hover {
+			background-color: transparent;
+		}
+
+
+	.menu-list {
+		display: inline-block;
+		height: 70px;
+		list-style: none;
+		margin: 0 20px;
+	}
+
+		.menu-list-link {
+			color: #f8f8f8;
+			display: block;
+			font-family: Din;
+			font-size: 1.8em;
+			height: 70px;
+			line-height: 70px;
+			text-decoration: none;
+			transition-duration: 0.5s;
+			width: auto;
+		}
+
+		.menu-list-link:hover {
+			color: #26BCEA;
+		}
+
+		.menu-btn { display: none;}
+		.menu-navigation {display: inline-block; width: auto;}
+
+		.menu-search {
+			display: inline-block;
+			width: auto;
+			height: 65px;
+			margin: 0 10px;
+			background: none;
+			color: #f8f8f8;
+			line-height: 70px;
+			font-family: League;
+			font-size: 1.8em;
+			
+
+			transition-duration: 0.5s;
+			
+		}
+
+		.menu-user {
+			
+			display: inline-block;
+			width: auto;
+			height: 65px;
+			margin: 0 10px;
+			background: none;
+			color: #f8f8f8;
+			line-height: 70px;
+
+			transition-duration: 0.5s;
+		}
+/*-----  End of .menu  ------*/

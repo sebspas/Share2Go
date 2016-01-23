@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Share2go</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="img/favicon.ico" type="image/x-icon" rel="icon" />
+  <link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+</head>
+<body>
+	<div id="main">
+		<div class="menu">
+			<div class="menu-logo">
+				<a class="menu-logo-link" href="#"></a>
+			</div>
+			<!--<span class="menu-btn"></span>-->
+			<nav class="menu-navigation">
+				<ul class="inline-block left">
+					<li class="menu-list">
+						<a class="menu-link current" href="#">Home
+							<span class="link-notif"><i class="link-notif-i">42</i></span>
+						</a>
+					</li>
+					<li class="menu-list"><a class="menu-link" href="#">Profile</a></li>
+					<li class="menu-list">
+						<a class="menu-link" href="#">Messages
+							<span class="link-notif"><i class="link-notif-i">3</i></span>
+						</a>
+					</li>
+					<li class="menu-list"><a class="menu-link" href="#">Nouveau trajet</a></li>
+				</ul>
+			</nav>
+			<div class="menu-user right">
+				<span class="user-avatar left"><img src="http://gravatar.com/avatar/c71c38340fc94601738c4d0c794cca36?s=512" alt="avatar"></span>
+				<a class="menu-link right" href="#">Se déconnecter</a>
+			</div>
+		</div><!-- // menu -->
+		<div class="row">
+			<div class="frame cols5">
+				<div class="hb red3"><h2 class="hb-title">Aubagne - Marseille</h2></div>
+				<div class="frame-content">
+					<span class="price red3 right"><strong><i class="price-i">2€</i></strong></span>
+					<div class="line">
+						<div class="icon date"></div>
+						<span class="icon-content">Le <strong>20/12/14</strong> à <strong>16h30</strong></span>
+					</div>
+					<div class="line">
+						<span class="line-content"><strong>3</strong> place(s) disponible(s)</span>
+					</div>
+					<div class="line">
+						<div class="icon music"></div>
+						<div class="icon bag"></div>
+						<div class="icon nocig"></div>
+						<div class="icon talk"></div>
+					</div>
+					<div class="line2">
+						<!-- <span class="line-content-block"><strong>Véhicule</strong></span> -->
+						<hr />
+						<div class="icon2 car"></div>
+						<span class="icon-content"><strong>Peugeot 208</strong></span>
+					</div>
+					<div class="line">
+						<span class="user-avatar-l left"><img src="http://gravatar.com/avatar/c71c38340fc94601738c4d0c794cca36?s=512" alt="avatar"></span>
+						<a class="user-name" href="#Hercules">Hercules</a>
+						<div class="icon0 star1"></div>
+						<div class="icon0 star1"></div>
+						<div class="icon0 star1"></div>
+						<div class="icon0 star1"></div>
+						<div class="icon0 star1"></div>
+
+						<a class="btn2 red3 right" href="#">Confirmer</a>
+					</div>
+				</div>
+			</div>
+			<div class="g1"></div>
+			<div class="frame cols5">
+				<div class="hb blue2"><h2 class="hb-title">Carte</h2></div>
+				<div class="frame-content">
+					<iframe width="425" 
+						height="350" 
+						frameborder="0" 
+						scrolling="no" 
+						marginheight="0" 
+						marginwidth="0" 
+						src="https://maps.google.fr/maps?f=d&amp;source=s_d&amp;saddr=<?php echo $source; ?>&amp;daddr=<?php echo $dest; ?>&amp;hl=fr&amp;geocode=FRSWlAIdOPtUACnLJqXwM6PJEjG8woyx4SGNLA%3BFQWdngIdmFNJACkHnbw5h-u1EjE2ex36bptC5g&amp;aq=&amp;sll=43.949318,4.805529&amp;sspn=0.001634,0.001124&amp;vpsrc=0&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=43.637317,5.209932&amp;spn=0.692203,0.822113&amp;output=embed">
+					</iframe>
+				</div>
+			</div>
+		</div><!-- .row -->
+		<div class="row">
+			<div class="frame cols3">
+				<div class="hb cyan1">
+					<h2 class="hb-title">Conducteur</h2>
+					<div class="g2"></div>
+					<div class="cols3">
+						<span class="profil-avatar"><img src="http://gravatar.com/avatar/c71c38340fc94601738c4d0c794cca36?s=512" alt="avatar"></span>
+					</div>
+					<div class="clear"></div>
+					<h2 class="hb-title">Hercules</h2>
+					<div class="g2"></div>
+					<div class="cols4">
+						<div class="icon0 star1"></div>
+						<div class="icon0 star1"></div>
+						<div class="icon0 star1"></div>
+						<div class="icon0 star1"></div>
+						<div class="icon0 star0"></div>
+					</div>
+				</div>
+				<div class="frame-content">
+					<div class="line">
+						<p>Âge : <strong>20</strong> ans</p>
+					</div>
+					<div class="line">
+						<p>Date inscription : <strong>26/04/2014</strong></p>
+					</div>
+					<div class="line">
+						<p>Téléphone : <strong>06 12 34 56 78</strong></p>
+					</div>
+					<div class="line">
+						<p>Trajet(s) effectué(s) : <strong>4</strong></p>
+					</div>
+					<div class="line">
+						<p>Trajet(s) proposé(s) : <strong>1</strong></p>
+					</div>
+					<div class="line">
+						<a class="btn2 cyan1 right" href="#">Contacter</a>
+					</div>
+				</div>
+			</div>
+			<div class="g3"></div>
+			<div class="frame cols5">
+				<div class="hb cyan1"><h2 class="hb-title">Commentaires</h2></div>
+				<div class="frame-content">
+					
+				</div>
+			</div>
+		</div>
+	</div><!-- #main -->
+</body>
+</html>

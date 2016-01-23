@@ -1,5 +1,5 @@
 <?php
 
-	//header("Location : /dev/index.php");
+	header("Location: ./Controller/index.php");
 
 ?>

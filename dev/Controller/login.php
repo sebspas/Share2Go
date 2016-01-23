@@ -21,6 +21,7 @@ function checklog($Tab) {
 
 if ($_POST['send']) {
 	$error = checklog($_POST);
+
 	if ($error == "NoError") {
 		$User = new user($_POST['email']);
 		$_SESSION['id'] = $User->getId();
@@ -34,6 +35,7 @@ if ($_POST['send']) {
 		$_SESSION['lastco'] = $User->getlastco();
 		$_SESSION['nbnewmess'] = getNbNewMess($User->getId());
 		$_SESSION['lu'] = false;
+
 		header('Location: index.php');
 	} else {
 		echo "<div class='error' ><p class='error-txt' >" . $error . "</p></div>";

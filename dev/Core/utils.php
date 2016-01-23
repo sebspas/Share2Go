@@ -9,9 +9,10 @@
  */
 session_name('s2go');
 session_start();
-ini_set('display_errors', 0);
-define("CSS", '../dev/webroot/css', TRUE);
-define("Img", '../dev/webroot/img', TRUE);
+//ini_set('display_errors', 2);
+error_reporting( E_ALL);
+define("CSS", '/S2go/dev/webroot/css', TRUE);
+define("Img", '/S2go/dev/webroot/img', TRUE);
 $color = array(0 => 'blue3', 1 => 'red3', 2 => 'cyan1', 3 => 'green3', 4 => 'blue2', 5 => 'yellow2', 6 => 'maroon1');
 $numcolor = 0;
 
@@ -57,9 +58,9 @@ function start_page($titre, $nummenu) {
 		        <meta charset="utf-8">
 		        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		        <title>Share2go : <?=$titre?></title>
-		        <link rel="stylesheet" href=<?="" . CSS . "/style.css";?>/>
-		        <link href="http://62.210.110.24/S2go/dev/webroot/img/favicon.ico" type="image/x-icon" rel="icon"/>
-		        <link href="http://62.210.110.24/S2go/dev/webroot/img/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+		        <link rel="stylesheet" href='/S2go/dev/webroot/css/style.css'/>
+		        <link href="http://51.255.41.18/S2go/dev/webroot/img/favicon.ico" type="image/x-icon" rel="icon"/>
+		        <link href="http://51.255.41.18/S2go/dev/webroot/img/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
 		    </head>
 		    <body>
 		    <div id="main">
@@ -108,9 +109,9 @@ if ($nummenu == 1) {
 		<?php $BD = new BD('user');
 		$user = $BD->select('iduser', $_SESSION['id']);?>
 				                <span class="user-avatar left"><img src="<?=IMG . '/' . $user->avatar;?>" alt="avatar"></span>
-				                <a class="menu-link right logout0" href="../dev/Controller/logout.php">Se déconnecter</a>
+				                <a class="menu-link right logout0" href="../Controller/logout.php">Se déconnecter</a>
 
-				                <div class="logout1"><a href="../dev/Controller/logout.php"></a></div>
+				                <div class="logout1"><a href="../Controller/logout.php"></a></div>
 				            </div>
 				        </div><!-- // menu -->
 		<?php
@@ -123,7 +124,7 @@ if ($nummenu == 1) {
 				            </div>
 
 				            <div class="menu-user right">
-				                <a class="btn2 blue2 right" href="../dev/login.php">Se connecter</a>
+				                <a class="btn2 blue2 right" href="./login.php">Se connecter</a>
 				            </div>
 				        </div><!-- // menu -->
 		<?php
@@ -136,7 +137,7 @@ if ($nummenu == 1) {
 				            </div>
 
 				            <div class="menu-user right">
-				                <a class="btn2 red3 right" href="../dev/inscription.php">Inscription</a>
+				                <a class="btn2 red3 right" href="../Controller/inscription.php">Inscription</a>
 				            </div>
 				        </div><!-- // menu -->
 		<?php
@@ -154,13 +155,13 @@ function end_page() {?>
 		    <!--<script type="text/javascript" src="../dev/webroot/js/oXHR.js"></script>-->
 		    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"
 		            type="text/javascript"></script>
-		    <script type="text/javascript" src="../dev/webroot/js/velocity.min.js"></script>
-		    <script type="text/javascript" src="../dev/webroot/js/velocity.ui.min.js"></script>
-		    <script type="text/javascript" src="../dev/webroot/js/oXHR.js"></script>
-		    <script type="text/javascript" src="../dev/webroot/js/nbplace.js"></script>
-		    <script type="text/javascript" src="../dev/webroot/js/autocomplete.js"></script>
-		    <script type="text/javascript" src="../dev/webroot/js/background.js"></script>
-		    <script type="text/javascript" src="../dev/webroot/js/main.js"></script>
+		    <script type="text/javascript" src="../webroot/js/velocity.min.js"></script>
+		    <script type="text/javascript" src="../webroot/js/velocity.ui.min.js"></script>
+		    <script type="text/javascript" src="../webroot/js/oXHR.js"></script>
+		    <script type="text/javascript" src="../webroot/js/nbplace.js"></script>
+		    <script type="text/javascript" src="../webroot/js/autocomplete.js"></script>
+		    <script type="text/javascript" src="../webroot/js/background.js"></script>
+		    <script type="text/javascript" src="../webroot/js/main.js"></script>
 		    </body>
 		    </html>
 	<?php }

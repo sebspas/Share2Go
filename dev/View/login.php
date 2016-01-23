@@ -13,7 +13,7 @@
 			<div class="frame cols4">
 				<div class="hb blue2"><h2 class="hb-title">Se connecter</h2></div>
 				<div class="frame-content">
-					<form method="post" action="#" class="center">
+					<form method="post" class="center">
 	       				<input type="email" placeholder="Email" name="email" id="email">
 	            		<input type="password" placeholder="Mot de passe" name="password" id="password">
 	                	<input class="btn blue2 center" type="submit" value="Ok" name="send" id="send">

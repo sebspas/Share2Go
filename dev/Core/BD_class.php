@@ -21,7 +21,7 @@ class BD {
      */
     public function __construct($table){
         if (self::$bdd == null) {
-            self::$bdd = new PDO('mysql:host=localhost;dbname=s2go', 'root', 'aqwEDCtgb7');
+            self::$bdd = new PDO('mysql:host=localhost;dbname=s2go', 'root', 'aqwEDCtgb7;');
         }
         $this->table = $table;
     }

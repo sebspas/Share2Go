@@ -1,3 +1,7 @@
+# Config
+.idea/
+dev/Core/BD_class.php
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
